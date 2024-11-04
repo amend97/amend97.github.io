@@ -1,0 +1,33 @@
+#app {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+#cat-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cat {
+    width: 20px;
+    height: auto;
+}
+
+#selected-hat {
+    position: absolute;
+    width: 400px;
+    /* Adjust hat size as needed */
+}
+
+#hat-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hat {
+    width: 400px;
+    cursor: pointer;
+}
