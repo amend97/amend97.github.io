@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const selectedHat = document.getElementById("selected-hat");
     const hats = document.querySelectorAll(".hat");
-    let isHatSelected = false;
 
     // Step 1: Select a Hat
     hats.forEach(hat => {
@@ -23,8 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Position the hat at the tap location
             selectedHat.style.left = `${x - selectedHat.width / 2}px`;
             selectedHat.style.top = `${y - selectedHat.height / 2}px`;
-
-            isHatSelected = false; // Deselect the hat after placing
         }
     });
 });
