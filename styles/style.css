@@ -1,33 +1,55 @@
-#app {
-    text-align: center;
-    max-width: 400px;
-    margin: auto;
-}
+        /* Basic Styling */
+        html {
+            font-family: "DynaPuff", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            text-align: center;
+            background-color: #c3ba96;
+            margin: 0;
+            padding: 20px;
+        }
 
-#cat-container {
-    position: relative;
-    display: inline-block;
-}
+        #app {
+            max-width: 350px;
+            margin: auto;
+        }
 
-#cat {
-    width: 20px;
-    height: auto;
-}
+        #cat-container {
+            position: relative;
+            display: inline-block;
+            border: 10px solid #571818;
+            border-radius: 100px;
+            overflow: hidden;
+        }
 
-#selected-hat {
-    position: absolute;
-    width: 400px;
-    /* Adjust hat size as needed */
-}
+        #cat {
+            width: 100%;
+            height: auto;
+        }
 
-#hat-selection {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
+        #selected-hat {
+            position: absolute;
+            width: 100px; /* Adjust hat size */
+            display: none; /* Hidden until a hat is selected */
+            pointer-events: none; /* Makes sure the hat doesn’t interfere with clicks */
+        }
 
-.hat {
-    width: 400px;
-    cursor: pointer;
-}
+        #hat-selection {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hat {
+            width: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .hat:hover {
+            transform: scale(1.3); /* Slight zoom effect on hover */
+        }
